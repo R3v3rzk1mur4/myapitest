@@ -21,7 +21,22 @@ myapitest when download has the following structure:
 
 Install or ensure you have python3-flask
 download or clone the git repo 
-execute the run bash shell script ./run_app.sh
+execute the run bash shell script 
+
+```
+./run_app.sh
+```
+
+in another terminal you can execute:
+
+```
+curl http://localhost:5000/tests/test2/test.backup
+```
+
+This should return a json response containing the content message:
+```
+{"content":"hello it works"
+```
 
 You can also run it in a docker container by executing docker run 
 
@@ -35,7 +50,10 @@ This app can be a security risk as it reads from a file system. A lot of securit
 
 # TO-DO
 
-The POST, PUT, DELETE commands are not validated at this time.  Best to create an authentication and authorization control in order to allow permissions to execute this HTTP methods.
+- The POST, PUT, DELETE commands are not validated at this time.  Best to create an authentication and authorization control in order to allow permissions to execute this HTTP methods.
+
+- Consider environment hardening considerations during deployment 
+
 
 
 
