@@ -27,7 +27,7 @@ execute the run bash shell script
 ./run_app.sh
 ```
 
-in another terminal you can execute:
+in another terminal you can execute in order to read the content of a default test file:
 
 ```
 curl http://localhost:5000/tests/test2/test.backup
@@ -37,6 +37,9 @@ This should return a json response containing the content message:
 ```
 {"content":"hello it works"
 ```
+
+You can also try to navigate to http://localhost:5000/ this should give you a JSON response view of the content of the default directory
+
 
 You can also run it in a docker container by executing docker run 
 
