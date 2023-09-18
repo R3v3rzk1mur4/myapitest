@@ -40,8 +40,19 @@ This should return a json response containing the content message:
 
 You can also try to navigate to http://localhost:5000/ this should give you a JSON response view of the content of the default directory
 
+## Deployment
+You can build a docker image: 
 
-You can also run it in a docker container by executing docker run 
+```
+ docker build -t myapitest .
+
+```
+
+You can also run it in a docker container:
+
+```
+docker run -d -p 5000:5000
+```
 
 ## Testing 
 

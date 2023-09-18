@@ -13,5 +13,8 @@ COPY myapitest.py /myapitest
 RUN pip install flask
 RUN pip install --upgrade pip
 
+# port to expose
+EXPOSE 5000
+
 # Run the application
 CMD ["python3", "myapitest.py"]
